@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./bootstrap.css">
+        <style>
+            .input-box{
+                display: flex;
+                background-color: #d0d0d0;
+                justify-content: space-around;
+                align-content: space-around;
+            }
+            .input-prep{
+                /* width: 400px; */
+                display: flex;
+            }
+            .input-body{
+                flex: 1;
+            }
+            .input-addon{
+                flex-grow: 0.2;
+            }
+            .input-append{
+                display: flex;
+            }
+            .input-button{
+                flex-grow: 0.2;
+            }
+        </style>
+    </head>
+    <body class="input-box">
+        <div class="input-prep input-group">
+            <span class="input-addon input-group-addon" id="basic-addon1">搜索</span>
+            <input type="text" class="input-body form-control">
+            <button class="input-botton btn btn-default">Amount</button>
+        </div>
+        <div class="input-append">
+            <input type="text" class="form-control">
+            <!-- <span class="input-group-btn"> -->
+                <button type="button" class="btn btn-default input-button">
+                    search
+                    <!-- <span class="glyphicon glyphicon-search" aria-hidden="true">search</span> -->
+                </button>
+            <!-- </span> -->
+        </div> 
+    </body>
+</html>
