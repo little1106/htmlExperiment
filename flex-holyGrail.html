@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .holy{
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                margin: 0;
+                color:white;
+                text-align: center;
+                font-size: 20px;
+            }
+            header,footer{
+                flex: 1;
+                background-color: gray;
+            }
+            .holy-body{
+                display: flex;
+                flex: 1;
+                flex-grow: 100;
+                /* justify-content: flex-end;
+                align-items: flex-end; */
+            }
+            .holy-left, .holy-center, .holy-right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .holy-left{
+                background-color: blue;
+                order: -1;
+                flex: 0 0 12em;
+
+            }
+            .holy-center{
+                flex: 1;
+                background-color: gainsboro;
+
+            }
+            .holy-right{
+                background-color: orangered;
+                flex: 0 0 12em;
+            }
+        </style>
+    </head>
+    <body class="holy">
+        <header>#header</header>
+        <div class="holy-body">
+            <main class="holy-center">center</main>
+            <nav class="holy-left">left</nav>
+            <aside class="holy-right">right</aside>
+        </div>
+        <footer>#footer</footer>
+    </body>
+</html>
